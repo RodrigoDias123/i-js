@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "A minimal JavaScript ",
+  "homepage": "https://github.com/RodrigoDias123/i-js#readme",
+  "bugs": {
+    "url": "https://github.com/RodrigoDias123/i-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoDias123/i-js.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "adicional": "node src/adicional.js"
+  },
+
+   "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
