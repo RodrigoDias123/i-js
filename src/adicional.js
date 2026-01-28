@@ -1,12 +1,20 @@
-prompt = require('prompt-sync')();
-let number = parseInt(prompt('Enter a number: '));
+//Desafio adicional:
+//Modifique seu script de forma que caso o número seja múltiplo de 05, interrompa o código e apresente uma mensagem
+//Transforme seu script em uma função
 
-if (number !== 15) {
-  console.log('The number is not 15');
+function verificarNumero(number) {
+  if (number % 5 === 0) {
+    console.log("Número múltiplo de 5 detectado. Interrompendo...");
+    return;
+  }
+
+  number > 10 && number <= 20
+    ? console.log("O número está entre 10 e 20 inclusive")
+    : console.log("");
+
+  number !== 15
+    ? console.log("O número não é 15")
+    : console.log("");
 }
 
-if (number > 10 && number < 20) {
-  console.log('The number is between 10 and 20');
-}
-
-console.log(number % 2 === 0 ? 'The number is even' : 'The number is odd');
+verificarNumero(15);

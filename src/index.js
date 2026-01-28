@@ -1,9 +1,17 @@
-// Use operadores &&, || e ! para criar um script que verifica se um número está entre 10 e 20 (inclusive) e não é igual a 15
+//Alterar src/index.js de forma a resolver os problemas abaixo:
+//Adeque o script anteriormente escrito para utilizar operadores ternários.
+//Caso o número seja igual a 5, 10 ou 15, interromper o código
 
-let num = 12;
+const number = 15;
 
-if (num >= 10 && num <= 20 && !(num === 15)) {
-  console.log("Condição verdadeira");
-} else {
-  console.log("Condição falsa");
-}
+if (number === 5 || number === 10 || number === 15){
+    return;
+} 
+
+number > 10 && number <= 20 
+  ? console.log("O número está entre 10 e 20 inclusive") 
+  : console.log("");
+
+number !== 15 
+  ? console.log("O número não é 15") 
+  : console.log("");
