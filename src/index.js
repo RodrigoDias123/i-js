@@ -2,9 +2,10 @@
 //Adeque o script anteriormente escrito para utilizar operadores ternários.
 //Caso o número seja igual a 5, 10 ou 15, interromper o código
 
-const number = 15;
+const number = 5
 
 if (number === 5 || number === 10 || number === 15){
+    console.log("Número inválido. Interrompendo...");
     return;
 } 
 
