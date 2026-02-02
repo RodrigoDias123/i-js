@@ -1,5 +1,8 @@
 COMMAND ?= start
 
+install:
+	npm install
+
 up:
 	docker compose up --build
 

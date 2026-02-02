@@ -1,20 +1,16 @@
 //Desafio adicional:
-//Modifique seu script de forma que caso o número seja múltiplo de 05, interrompa o código e apresente uma mensagem
-//Transforme seu script em uma função
+//Crie uma função create_integers para criar uma lista contendo 100 números aleatórios múltiplos de 3
+//Utilize a resposta como parâmetro de entrada da função principal
+//Mova a função create_integers para src/utils.js e use alguma técnica de importação para importar a função para ser usada em src/index.js
 
-function verificarNumero(number) {
-  if (number % 5 === 0) {
-    console.log("Número múltiplo de 5 detectado. Interrompendo...");
-    return;
+// Função que cria uma lista de 100 números aleatórios múltiplos de 3 entre 3 e 300
+
+export function createIntegers() {
+  const integers = [];
+  for (let i = 0; i < 100; i++) {
+    // Gerar número aleatório entre 1 e 100 (porque 100*3 = 300)
+    const randomMultipleOf3 = (Math.floor(Math.random() * 100) + 1) * 3;
+    integers.push(randomMultipleOf3);
   }
-
-  number > 10 && number <= 20
-    ? console.log("O número está entre 10 e 20 inclusive")
-    : console.log("");
-
-  number !== 15
-    ? console.log("O número não é 15")
-    : console.log("");
+  return integers;
 }
-
-verificarNumero(15);

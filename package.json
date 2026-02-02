@@ -16,7 +16,9 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "adicional": "node src/adicional.js"
+    "adicional": "node src/adicional.js",
+    "test": "node src/tests.js",
+    "utils": "node src/utils.js"
   },
 
    "dependencies": {
