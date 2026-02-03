@@ -9,13 +9,17 @@
 
 function analisarNumero(number) {
   if (number === 15) {
-    return 'É igual a 15';
+       console.log('É igual a 15');
+    return 
   } else if (number % 5 === 0) {
-    return 'Função interrompida, pois o número é múltiplo de 5';
+    console.log('função interrompida, pois o número é múltiplo de 5');
+    return 
   } else if (number >= 10 && number <= 20) {
-    return 'Está entre 10 e 20';
+    console.log('Está entre 10 e 20');
+    return 
   } else {
-    return 'Não está entre 10 e 20';
+    console.log('Não está entre 10 e 20');
+    return 
   }
 }
 
@@ -27,8 +31,3 @@ console.log(resultado);
 console.log(myarrai)
 
 
-//Desafio adicional:
-
-import { createIntegers } from './utils.js'; 
-const numbers = createIntegers();
-console.log(numbers);
